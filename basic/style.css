@@ -1,0 +1,12 @@
+.site-header{
+  display:flex;
+  text-align: center;
+  color: rgb(230, 223, 227);
+  background-color: rgb(216, 85, 111);
+}
+.site{
+  display:flex;
+  text-align: center;
+  gap:30px;
+  margin-left: auto;
+}

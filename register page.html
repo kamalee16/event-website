@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <meta name="description" content="college wensite" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="index-header">
+      <i
+        class="fa-solid fa-graduation-cap"
+        style="color: rgb(53, 53, 107); padding-top: 10px"
+      ></i>
+      <h1 style="margin-left: 10px">Campus Events</h1>
+      <div class="pages">
+        <a href="index.html" style="padding: 5px">Home</a>
+        <a href="about.html" style="padding: 5px">About</a>
+        <a href="event page.html" style="padding: 5px">Event</a>
+        <a href="schedule page.html" style="padding: 5px">Schedule</a>
+        <a href="register page.html" style="padding: 5px">Register</a>
+      </div>
+    </header>
+
+    <h1>Event Registration</h1>
+    <h6>Fill out tue form to register for an event</h6>
+
+    <form class="form-group">
+      <div class="form1">
+        <label for="name">Full Name *</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+      <div class="form2">
+        <label for="Email">Email *</label>
+        <input id="Email" type="email" placeholder="example@gamil.com" />
+      </div>
+      <div class="form3">
+        <label for="phone">Phone Number*</label>
+        <input id="phone" type="tel" pattern="[0-9]{10}" />
+      </div>
+      <div class="form4">
+        <label for="dept">Department</label>
+        <select id="course" required>
+          <option>select Department</option>
+          <option>CSE</option>
+          <option>AI & DS</option>
+          <option>mechanical</option>
+        </select>
+      </div>
+
+      <div class="form5">
+        <label>Event *</label>
+        <select id="course" required>
+          <option>select Department</option>
+          <option>Tech Fest 2026</option>
+          <option>Cultural Day</option>
+          <option>Inter-college sports meet</option>
+          <option>AI Workshop</option>
+          <option>Photography Contest</option>
+          <option>Career Guidance Talk</option>
+        </select>
+      </div>
+
+      <div class="form6">
+        <label for="date">Preferred Date *</label>
+        <input id="date" type="date" />
+      </div>
+      <div class="form7">
+        <label for="msg">Message(Optional)</label>
+        <input id="msg" type="text" />
+      </div>
+    </form>
+
+    <footer class="footer-element">
+      <div class="footer-content">
+        <div>
+          <h1>Campus Events</h1>
+          <p>
+            Bringing students together through learning, creativity, and
+            collaborate
+          </p>
+        </div>
+
+        <div>
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="event page.html">Events</a></li>
+            <li><a href="schedule page.html">Schedule</a></li>
+            <li><a href="register page.html">Register</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h1>Follow us on:</h1>
+          <br />
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+      <hr />
+      <p>&copy; 2026 Campus Events. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

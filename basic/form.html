@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="description" content="college wensite">
+    <title>college</title>
+</head>
+<body>
+    <h1>registation form</h1>
+    <form action="/performance" method="post">
+
+        <label for="firstname">firt name</label>
+        <input type="text" id="firstname" name="firstname" minlength="2" maxlength="20" required><br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required><br><br>
+
+        <label for="password">password</label>
+        <input type="password" name="password" maxlength="20" minlength="2" required><br><br>
+
+        <label for="phone number">phone number</label>
+        <input type="tel" name="phone number" pattern="[0-9]{10}" ><br><br>
+
+        <label for="dob">dob</label>
+        <input type="date" name="dob"><br><br>
+
+        <label for="gender">GENDER</label><br>
+        <input type="checkbox" id="female" name="female" value="female"><label>female</label><br>
+        <input type="checkbox" id="male" name="male" value="male"><label>male</label><br><br>
+        
+        <label for="course">COURSE</label><br>
+        <select id="course" required>
+            <option value="">select one</option>
+            <option value="ar&vr">AR & VR</option>
+            <option value="prompt engineering">prompt engineer</option>
+            <option value="html">html &amp; css</option>
+        </select><br><br>
+
+        <label for="bio" >about you</label><br>
+        <textarea id="bio" name="bio" rows="4" max length="300" placeholder="write about yourself"></textarea><br><br>
+
+        <label for="resume">upload the resume</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,applcation/pdf"><br><br>
+
+        <fieldset>
+            <legend>your skill</legend>
+            <label for="skill-html">
+                <input type="checkbox" id="skill-html" name="skills" value="html">html
+            </label>
+            <label for="skill-css">
+                <input type="checkbox" id="skill-css" name="skills" value="css">css
+            </label>
+            <label for="skill-js">
+                <input type="checkbox" id="skill-js" name="skills" value="js">javascript
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>experience</legend>
+            <label for="level-beginner">
+                <input type="radio" id="level-beginner" name="experience" value="beginner">beginner
+            </label>
+            <label for="level-intermediate">
+                <input type="radio" id="level-intermediate" name="experience" value="intermediate">intermediate
+            </label>
+            <label for="level-advanced">
+                <input type="radio" id="level-advanced" name="experience" value="advanced">advanced
+            </label>
+        </fieldset>
+
+        <button type="submit">submit</button><br><br>
+        <button type="reset">clear form</button>
+    </form>
+
+</body>
