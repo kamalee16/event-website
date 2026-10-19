@@ -3,12 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=0.1" />
     <meta name="description" content="college wensite" />
-    <title>Home Page</title>
+    <title>Event details</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <header class="index-header">
@@ -23,18 +24,26 @@
       </div>
     </header>
 
-    <a href="index.html" class="but">Back to Events</a>
     <div id="details">
       <div class="details-left">
-        <h1>Tech Fest 2026</h1>
-        <h2>A celebration of innovation, technology and creativity.</h2>
-        <image src="image/tech.jpeg" alt="tchnical event image">
-        <h1>About the Event<h1>
-        <h5>Tech Fest 2026 is an techincal event that brighs together students, innovation and industry
+        <a href="event page.html" class="but">Back to Events</a>
+        <h1 style="font-size: 50px; margin-top: 25px; margin-bottom: 0px;">Tech Fest 2026
+          <span class="detail-but">Technical</span>
+        </h1>
+
+        <h2 class="detail-text"  style="margin-top: 0px; font-size: 18px; color: #53657c;">
+          A celebration of innovation, 
+          technology and creativity.</h2>
+        <img src="image/seminar.jpeg" alt="tchnical event image" />
+
+        <h1 style="font-size: 40px; margin: 0%;">About the Event<h1>
+        <h5 class="detail-about">Tech Fest 2026 is an techincal
+          event that brighs together students, innovation and industry
           persons. Participate hackthon, technical talks and more. Gain exposure,
           learn new skills and connect with the motivated people.
         </h5>
       </div>
+      
       <div class="details-right">
         <h1>Event information</h1>
         <div class="details-item">
@@ -69,10 +78,7 @@
             </div>
         </div>
 
-        <button class="register-btn">
-            Register for This Event
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <a class="detail-reg" href="register page.html">Register for This Event</a>
 
       </div>
     </div>

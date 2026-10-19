@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="index-header">
@@ -33,10 +34,10 @@
       </div>
     </div>
 
-    <h1>Featured Events</h1>
+    <h1 style="color:rgb(59, 51, 106);">Featured Events</h1>
 
     <div id="event-box">
-      <span class="event-card">
+      <span class="event-card" data-category="technical">
         <img src="image/tech.jpeg" alt="tech event image" class="event-image" />
         <h2>Tech Fest 2026</h2>
         <p>Jan 15 2026</p>
@@ -45,7 +46,7 @@
         <a href="event detail.html" class="but">View Details</a>
       </span>
 
-      <span class="event-card">
+      <span class="event-card" data-category="cultural">
         <img src="image/seminar.jpeg" alt="tech event image" class="event-image" />
         <h2>cultural dat</h2>
         <p>Feb 15 2026</p>
@@ -54,7 +55,7 @@
         <a href="event detail.html" class="but">View Details</a>
       </span>
 
-      <span class="event-card">
+      <span class="event-card" data-category="sports">
         <img src="image/sports.jpeg" alt="tech event image" class="event-image" />
         <h2>Inter-college sports meet</h2>
         <p>feb 21 2026</p>
@@ -64,21 +65,21 @@
       </span>
     </div>
 
-    <h1>Event Categories</h1>
+    <h1 style="color:rgb(59, 51, 106);">Event Categories</h1>
     <div id="end">
-      <div class="event-cat" style="background-color: rgb(243, 214, 219)">
+      <div class="event-cat"  data-category="technical" style="background-color: rgb(243, 214, 219)">
         <i class="fa-solid fa-laptop" style="color: rgb(192, 59, 59);"></i>
         <h3 style="font-size: 20px;">Technical<br>Events</h3>
       </div>
-      <div class="event-cat" style="background-color: rgb(236, 236, 183);">
+      <div class="event-cat" data-category="cultural" style="background-color: rgb(236, 236, 183);">
         <i class="fa-solid fa-music" style="color: rgb(151, 151, 70);"></i>
         <h3 style="font-size: 20px;">Cultural <br>Events</h3>
       </div>
-      <div class="event-cat" style="background-color:  rgb(190, 227, 190)">
+      <div class="event-cat"  data-category="sports" style="background-color:  rgb(190, 227, 190)">
         <i class="fa-solid fa-trophy" style="color: green;"></i>
         <h3 style="font-size: 20px;">Sports <br>Events</h3>
       </div>
-      <div class="event-cat" style="background-color:rgb(207, 185, 238)">
+      <div class="event-cat" data-category="workshops" style="background-color:rgb(207, 185, 238)">
         <i class="fa-solid fa-users" style="color: blueviolet;"></i>
         <h3 style="font-size: 20px;">Workshops & <br>Seminars</h3>
       </div>

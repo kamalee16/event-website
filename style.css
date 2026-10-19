@@ -30,11 +30,10 @@
 .pages a:hover{
   width:100px;
   height: 30px;
-  color:white;
-  background-color: #585096;
-  font-size: 24px;
+  color:#0879f9;
+  background-color: rgba(194, 212, 249, 0.5);
   padding:50px;
-  border-radius: 20px;
+  border-radius: 15px;
   text-align: center;
 }
 
@@ -125,6 +124,18 @@ body{
   align-items: center;
   box-shadow: 0 10px 10px rgba(40, 90, 130, 0.08);
 }
+.event-cat {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.event-cat:hover {
+    transform: translateY(-5px);
+}
+
+.event-cat.active {
+    outline: 3px solid rgb(59, 51, 106);
+}
 
 .footer-element{
   background-color: #2a3269; 
@@ -209,6 +220,7 @@ i{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-bottom: 30px;
   
 }
 
@@ -221,18 +233,21 @@ i{
   margin-bottom: 30px;
 }
 
+.type-ele b, .type-ele p{
+  color:rgb(59, 51, 106);
+}
+
 .search{
   padding:20px; 
   background-color: white; 
-  color: rgb(71, 71, 130);
   display: flex;
-  border-width: 1px;
   width:500px;
   height:10px;
   margin-top: 30px;
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 10px 10px rgba(40, 90, 130, 0.08);
+  border: 1px solid #384b94;
 }
 
 /* schedule */
@@ -266,37 +281,7 @@ td{
     text-align: left;
     font-size: 27px;
 }
-/*register*/
-.form-group input {
-    padding: 100px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-}
 
-.form-group{
-   display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 600px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.form-group input {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-}
-
-.form-group input:focus {
-    border-color: #9290f3;
-}
 
 /* event detail page*/
 #details{
@@ -310,8 +295,8 @@ td{
 
 .details-right{
     margin-top: 100px;
-    width: 450px;
-    padding: 20px;
+    width: 400px;
+    padding:40px;
     background-color: #eef7fc;
     border: 2px solid #d8eaf5;
     border-radius: 15px;
@@ -332,9 +317,9 @@ td{
     margin-bottom: 22px;
 }
 
-.details-item > i {
+.details-item  i {
     color: #234d78;
-    font-size: 25px;
+    font-size: 30px;
     width: 40px;
     text-align: center;
     margin-top: 3px;
@@ -343,21 +328,82 @@ td{
 
 .details-item h3 {
     color: #244567;
-    font-size: 18px;
+    font-size: 25px;
     margin: 0 0 8px;
 }
 
 
 .details-item p {
     color: #58738e;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
     line-height: 1.5;
 }
 
+.details-left{
+  margin-top: 10px;
+  margin-left: 0px;
+  width: 900px;
+  padding: 20px;
+  background-color:  rgba(254, 255, 255, 0);
+  height:600px;
+}
+.details-left img{
+  width:870px;
+  height:300px;
+  border-radius: 30px;
+}
 
+.detail-but{
+  background-color: #dcecff;
+  color: #1671d9;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.detail-about{
+  width:850px;
+  font-size: large;
+  padding-top: 0%;
+}
+
+.detail-reg{
+  padding: 16px 80px;
+  background-color: #0879f9;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+  text-decoration: none;
+}
+
+
+/* form*/
+
+.form-group{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  padding-left:60px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border: 1px solid #d6e7f5;
+  border-radius: 10px;
+  background-color: rgba(194, 212, 249, 0.3);
+  margin: 30px;
+  color:rgb(59, 51, 106);
+  
+}
+
+input::placeholder{
+  color:rgb(59, 51, 106);
+  font-size: medium;
+}
+  
 .register-btn {
-    width: 100%;
+    width: 50%;
     padding: 16px 10px;
     background-color: #0879f9;
     color: white;
@@ -365,11 +411,54 @@ td{
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
+    margin: 30px;
+    margin-left: 400px;
 }
 
-/* Button hover effect */
 .register-btn:hover {
     background-color: #0564d1;
 }
+
+.form label, .form1 label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form input{
+    width: 80%;
+    min-width: 0;
+    height:30px;
+    padding: 10px;
+    border: 1px solid #d5e2ef;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+    margin: 10px;
+}
+.form select,
+.form textarea{
+  width: 83%;
+    min-width: 0;
+    height:50px;
+    padding: 10px;
+    border: 1px solid #d5e2ef;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+    margin: 10px;
+}
+.form1 input{
+  width:185%;
+  height:90px;
+  border: 1px solid #d5e2ef;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  margin: 10px;
+}
+
+
+
+
+
 
