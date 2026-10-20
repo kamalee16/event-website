@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
  
     row.addEventListener("mouseenter", function () {
-      /
+      
       Array.from(row.cells).forEach(function (cell) {
         cell.style.backgroundColor = "rgb(222, 232, 250)";
       });
