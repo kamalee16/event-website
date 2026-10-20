@@ -48,16 +48,22 @@ Pages
 Page	File	Description
 **Home	index.html**
   Landing page with a welcome banner . It has a Featured Events section with three event cards  and an Event Categories section.
+  
 **About	about.html**
   Explains what Campus Events is, with three Our Mission cards (Engage Students, Build Community, Create Opportunities) and the four event types.
+  
 **Events	event page.html	** 
   Lists all six events as cards, each with an image, date, venue, short description and a View Details button. It includes a search bar section.
+  
 **Event Details	event detail.html**	
   Detailed view of one event (Tech Fest 2026). It shows the description plus date, time, location and category in a side panel. It has a Back to Events button and a Register for This Event button.
+  
 **Schedule	schedule page.html**
   A table of all upcoming events with name, date, time, venue and category.
+  
 **Register	register page.html**
   Registration form with Full Name, Email, Phone (10 digits), Department, Event, Preferred Date and an optional Message.
+  
 **Interactive Features (script.js)**
   Category filter (Home page): clicking a category tile (Technical, Cultural, Sports, Workshops) shows only the matching event cards. Clicking it again shows all events.
   Card hover effect: event cards lift slightly and gain a shadow on hover.
