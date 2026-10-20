@@ -8,7 +8,7 @@ How to Run
 
 The website is hosted with GitHub Pages and can be opened directly in any browser:
 
-Live site: https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
+Live site: https://kamalee16.github.io/event-website/
 
 Use the navigation bar at the top to move between pages. No installation or setup is needed. An internet connection is needed only to load the Font Awesome icons from a CDN.
 
